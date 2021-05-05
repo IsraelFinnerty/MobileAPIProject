@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wit.venues">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.wit.venues.main.MainApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.wit.venues.views.map.VenueMapsView"></activity>
+        <activity
+            android:name="com.wit.venues.activities.NavDrawer"
+            android:label="@string/title_activity_nav_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.wit.venues.views.venue.VenueView" />
+        <activity android:name="com.wit.venues.views.venuelist.VenueListView" />
+        <activity android:name="com.wit.venues.views.login.LoginView" />
+        <activity android:name="com.wit.venues.views.signup.SignupView" />
+        <activity android:name="com.wit.venues.views.settings.SettingsView" />
+        <activity android:name="com.wit.venues.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.wit.venues.views.map.MapView"
+            android:label="@string/title_activity_map" />
+    </application>
+
+</manifest>
