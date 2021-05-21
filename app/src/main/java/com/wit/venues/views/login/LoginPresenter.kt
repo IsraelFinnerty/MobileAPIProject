@@ -27,6 +27,7 @@ class doLoginPresenter(view: BaseView) : BasePresenter(view), Callback<List<Venu
     }
 
 
+
     fun doLogin(email: String, password: String) {
         view?.showProgress()
         auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(view!!) { task ->

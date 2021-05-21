@@ -14,6 +14,7 @@ fun write(context: Context, fileName: String, data: String) {
     }
 }
 
+
 fun read(context: Context, fileName: String): String {
     var str = ""
     try {

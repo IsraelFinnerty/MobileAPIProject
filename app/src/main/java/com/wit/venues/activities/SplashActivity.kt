@@ -27,6 +27,7 @@ class SplashActivity : AppCompatActivity() {
     }, 1500)
   }
 
+
   private fun makeFullScreen() {
     // Remove Title
     requestWindowFeature(Window.FEATURE_NO_TITLE)

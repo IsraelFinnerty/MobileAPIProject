@@ -47,6 +47,7 @@ class VenuePresenter(view: BaseView) : BasePresenter(view), Callback<List<VenueM
             fireStore = app.venues as VenueFireStore
         }
 
+
         if (view.intent.hasExtra("venue_edit")) {
             edit = true
             venue = view.intent.extras?.getParcelable<VenueModel>("venue_edit")!!

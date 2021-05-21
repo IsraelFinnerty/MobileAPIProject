@@ -21,4 +21,5 @@ class MainApp : Application(), AnkoLogger {
     venues = VenueFireStore(applicationContext)
     info("Venue App Started")
       }
+
 }

@@ -31,6 +31,7 @@ class MapView : BaseView(), GoogleMap.OnMarkerDragListener, GoogleMap.OnMarkerCl
             presenter.doConfigureMap(it)
         }
 
+
         }
 
     override fun showLocation(location: Location) {

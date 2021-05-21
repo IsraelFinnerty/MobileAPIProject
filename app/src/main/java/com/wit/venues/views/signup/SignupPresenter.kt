@@ -17,6 +17,7 @@ class SignupPresenter(var view: SignupView) {
         app = view.application as MainApp
     }
 
+
     fun doNewSignup() {
        // var emailUsed = app.users.findUserByEmail(view.signup_email.text.toString())
         user.name = view.signup_name.text.toString()

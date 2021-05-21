@@ -1,5 +1,6 @@
 package com.wit.venues.models
 
+
 interface VenueStore {
     fun findAll(): List<VenueModel>
     fun findById(id:Long) : VenueModel?
@@ -9,3 +10,4 @@ interface VenueStore {
     fun clear()
     fun seed()
 }
+

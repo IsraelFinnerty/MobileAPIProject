@@ -27,6 +27,7 @@ data class VenueModelAPI ( var category: String ="") : Parcelable
         */
 
 
+
 @Parcelize
 data class VenueModel(   var id: Long = 0,
                             var userId : String = "",

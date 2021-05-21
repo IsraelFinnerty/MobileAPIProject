@@ -29,6 +29,7 @@ open class BasePresenter(var view: BaseView?): Callback<List<VenueModel>> {
         view = null
     }
 
+
     override fun onFailure(call: Call<List<VenueModel>>, t: Throwable) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
