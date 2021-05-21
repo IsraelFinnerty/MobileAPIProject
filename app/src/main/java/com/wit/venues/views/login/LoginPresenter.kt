@@ -14,7 +14,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-class LoginPresenter(view: BaseView) : BasePresenter(view), Callback<List<VenueModel>> {
+class doLoginPresenter(view: BaseView) : BasePresenter(view), Callback<List<VenueModel>> {
 
     var auth: FirebaseAuth = FirebaseAuth.getInstance()
 
